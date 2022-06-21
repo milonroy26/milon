@@ -1,0 +1,15 @@
+.contact{
+    background: url(https://newinceptions.com/wp-content/images/footer/Background/Footer-Background2.png) center bottom no-repeat scroll;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 20px;
+    color: white;
+}
+
+@media only screen and (max-width: 767px) {
+    .contact {
+      background: url(https://newinceptions.com/wp-content/images/footer/Background/Footer-Background2.png) center bottom no-repeat scroll;
+      background-size: cover;
+      padding: 20px;
+    }
+    }

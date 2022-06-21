@@ -20,7 +20,7 @@
 .my-acount{
     background-color: #161335;
     color: rgb(212, 215, 219);
-    padding: 24px 0;
+    padding: 28px 0 0 0;
     border-radius: 4px;
 }
 
@@ -34,4 +34,18 @@
 }
 #acount-icon:hover{
     background-color: #08d665;
+}
+.email-box a{
+    color: #111;
+    background-color: #fff;
+    display: block;
+    padding: 9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 1rem 0;
+    transition: .3s ease-in-out,
+}
+.email-box a:hover{
+    opacity: 0.8;
 }
