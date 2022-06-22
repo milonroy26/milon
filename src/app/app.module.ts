@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/pages/layout/header/header.component';
 import { SkillsComponent } from './components/pages/skills/skills.component';
 import { ResumeComponent } from './components/pages/resume/resume.component';
-import { ContactComponent } from './components/pages/layot/contact/contact.component';
+import { ContactComponent } from './components/pages/layout/contact/contact.component';
+import { AboutComponent } from './components/pages/about/about.component' 
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { ContactComponent } from './components/pages/layot/contact/contact.compo
     SkillsComponent,
     ResumeComponent,
     ContactComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,

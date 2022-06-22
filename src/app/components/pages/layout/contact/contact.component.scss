@@ -6,6 +6,21 @@
     color: white;
 }
 
+.form-control {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 0;
+  box-shadow: 0 0 0 !important;
+  border: 2px solid white;
+  color: white !important;
+}
+::placeholder{
+  color: white;
+  font-weight: bolder;
+}
+.inputColor{
+  border: 2px solid #08D665;
+}
 @media only screen and (max-width: 767px) {
     .contact {
       background: url(https://newinceptions.com/wp-content/images/footer/Background/Footer-Background2.png) center bottom no-repeat scroll;

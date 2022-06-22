@@ -1,0 +1,24 @@
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <h2>Contact</h2>
+                <h5 class="mt-2">If you have any questions or want to work together, please feel free to contact .</h5>
+                <div class="contact-form mt-5">
+                    <div class="row">
+                        <div class="col">
+                          <input (click)="inputName()" [style.border]="hasError ? '2px solid #08D665' : '2px solid white' " type="text" class="form-control" placeholder="Name" aria-label="name">
+                        </div>
+                        <div class="col">
+                          <input (click)="inputEmail()" [style.border]="emailError ? '2px solid #08D665' : '2px solid white' " type="email" class="form-control" placeholder="Email" aria-label="email">
+                        </div>
+                        <div class="mt-4">
+                            <textarea (click)="inputTextarea()" [style.border]="messageError ? '2px solid #08D665' : '2px solid white' " class="form-control" placeholder="Message" rows="4"></textarea>
+                          </div>
+                      </div>
+                      <button type="submit" class="btn fs-6 fw-bold mt-3">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
