@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ContactsService } from 'src/app/services/contacts.service'
 
 @Component({
   selector: 'app-contact',
@@ -9,7 +10,17 @@ export class ContactComponent implements OnInit {
   public hasError = false;
   public emailError = false;
   public messageError = false;
-  constructor() { }
+  public seleactError = false;
+
+  //user message input
+  public inName:string = '';
+  public inEmail:string = '';
+  public issue:string = '';
+  public message:string = ''; 
+
+  constructor(
+    private contact: ContactsService,
+  ) { }
 
   ngOnInit(): void {
   }
@@ -23,4 +34,20 @@ export class ContactComponent implements OnInit {
   inputTextarea(){
     this.messageError = !this.messageError;
   }
+  inputSeleact(){
+    this.seleactError = !this.seleactError;
+  }
+
+  // userMessage
+  userMessage(){
+    this.contact.sendMessage(this.inName, this.inEmail, this.issue, this.message)
+    .subscribe(data => {
+      alert(` Thankque ${data.name} sent your message`);
+      console.log(data);
+    }, error =>{
+      alert(`Not message sent`);
+      console.log(error);
+    })
+  }
+
 }

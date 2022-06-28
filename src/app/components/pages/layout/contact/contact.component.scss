@@ -6,7 +6,7 @@
     color: white;
 }
 
-.form-control {
+.form-control{
   background-color: transparent;
   border: 2px solid white;
   border-radius: 0;
@@ -14,6 +14,16 @@
   border: 2px solid white;
   color: white !important;
 }
+.form-select{
+  background-color: #181c28;
+  border: 2px solid white;
+  border-radius: 0;
+  box-shadow: 0 0 0 !important;
+  border: 2px solid white;
+  color: white !important;
+  font-weight: bold !important;
+}
+
 ::placeholder{
   color: white;
   font-weight: bolder;

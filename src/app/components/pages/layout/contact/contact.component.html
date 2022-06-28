@@ -7,16 +7,25 @@
                 <div class="contact-form mt-5">
                     <div class="row">
                         <div class="col">
-                          <input (click)="inputName()" [style.border]="hasError ? '2px solid #08D665' : '2px solid white' " type="text" class="form-control" placeholder="Name" aria-label="name">
+                          <input [(ngModel)]="inName" (click)="inputName()" [style.border]="hasError ? '2px solid #08D665' : '2px solid white' " type="text" class="form-control" placeholder="Name" aria-label="name">
                         </div>
                         <div class="col">
-                          <input (click)="inputEmail()" [style.border]="emailError ? '2px solid #08D665' : '2px solid white' " type="email" class="form-control" placeholder="Email" aria-label="email">
+                          <input [(ngModel)]="inEmail" (click)="inputEmail()" [style.border]="emailError ? '2px solid #08D665' : '2px solid white' " type="email" class="form-control" placeholder="Email" aria-label="email">
+                        </div>
+                        <div class="col-12">
+                            <select [(ngModel)]="issue" (click)="inputSeleact()" [style.border]="seleactError ? '2px solid #08D665' : '2px solid white' "  class="form-select mt-4">
+                                <option selected>Select a service package you're interested in..</option>
+                                <option value="1">Basic</option>
+                                <option value="2">Standard</option>
+                                <option value="3">Premium</option>
+                                <option value="3">Not sure</option>
+                              </select>
                         </div>
                         <div class="mt-4">
-                            <textarea (click)="inputTextarea()" [style.border]="messageError ? '2px solid #08D665' : '2px solid white' " class="form-control" placeholder="Message" rows="4"></textarea>
-                          </div>
+                            <textarea [(ngModel)]="message" (click)="inputTextarea()" [style.border]="messageError ? '2px solid #08D665' : '2px solid white' " class="form-control" placeholder="Message" rows="4"></textarea>
+                        </div>
                       </div>
-                      <button type="submit" class="btn fs-6 fw-bold mt-3">Send message</button>
+                      <button (click)="userMessage()" type="submit" class="btn fs-6 fw-bold mt-3">Send message</button>
                 </div>
             </div>
         </div>

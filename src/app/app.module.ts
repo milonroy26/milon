@@ -1,3 +1,5 @@
+import { HttpClientModule } from '@angular/common/http';
+import { ContactsService } from './services/contacts.service';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -8,6 +10,7 @@ import { SkillsComponent } from './components/pages/skills/skills.component';
 import { ResumeComponent } from './components/pages/resume/resume.component';
 import { ContactComponent } from './components/pages/layout/contact/contact.component';
 import { AboutComponent } from './components/pages/about/about.component' 
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +19,17 @@ import { AboutComponent } from './components/pages/about/about.component'
     SkillsComponent,
     ResumeComponent,
     ContactComponent,
-    AboutComponent
+    AboutComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ContactsService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
