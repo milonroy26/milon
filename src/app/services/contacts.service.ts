@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http'
+import { IMessage } from '../interfaces/message.interface';
 
 @Injectable({
   providedIn: 'root'
@@ -11,14 +12,8 @@ export class ContactsService {
     private http: HttpClient,
   ) { }
 
-  sendMessage(name:string, email:string, issue:string, message:string):Observable<any>{
-    const jsonFormet = {
-      name: name,
-      email: email,
-      issue: issue,
-      message: message,
-    }
+  send(message: IMessage):Observable<any>{
     const url = 'https://jsengine.herokuapp.com/contact/message/send';
-    return this.http.post(url, jsonFormet);
+    return this.http.post(url, message);
   }
 }

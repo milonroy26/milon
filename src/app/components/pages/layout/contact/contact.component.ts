@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { IMessage } from 'src/app/interfaces/message.interface';
 import { ContactsService } from 'src/app/services/contacts.service'
 
 @Component({
@@ -40,9 +41,17 @@ export class ContactComponent implements OnInit {
 
   // userMessage
   userMessage(){
-    this.contact.sendMessage(this.inName, this.inEmail, this.issue, this.message)
+    const message: IMessage = {
+      uuid: 'adeac3d4-88d6-453c-aebf-8d1e315c863c',
+      name: this.inName,
+      email: this.inEmail,
+      issue: this.issue,
+      message: this.message
+    }
+
+    this.contact.send(message)
     .subscribe(data => {
-      alert(` Thankque ${data.name} sent your message`);
+      alert(` Thankque ${data.success.name} sent your message`);
       console.log(data);
     }, error =>{
       alert(`Not message sent`);
