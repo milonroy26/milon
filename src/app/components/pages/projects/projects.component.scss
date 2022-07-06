@@ -1,0 +1,25 @@
+.card-img-top {
+    height: 235px;
+}
+
+.info {
+    width: 100%;
+    padding: 5px 4px;
+    background: rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+.info h3 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid mediumvioletred;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 2px 8px;
+}

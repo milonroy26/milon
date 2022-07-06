@@ -1,18 +1,21 @@
  // skill
- .skills{
+ .skills {
     background-color: #04293A;
  }
+
  .card {
     padding: 5px;
     cursor: pointer;
     margin-top: 20px;
     transition: 500ms;
  }
- .card:hover{
+
+ .card:hover {
     transform: translateY(-6px);
     opacity: 0.8;
  }
- .card .card-img-top{
+
+ .card .card-img-top {
     max-width: 5rem;
     margin: 0 auto;
  }

@@ -11,6 +11,7 @@ import { ResumeComponent } from './components/pages/resume/resume.component';
 import { ContactComponent } from './components/pages/layout/contact/contact.component';
 import { AboutComponent } from './components/pages/about/about.component' 
 import { FormsModule } from '@angular/forms';
+import { ProjectsComponent } from './components/pages/projects/projects.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { FormsModule } from '@angular/forms';
     ResumeComponent,
     ContactComponent,
     AboutComponent,
+    ProjectsComponent,
   ],
   imports: [
     BrowserModule,
