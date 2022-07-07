@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { appName } from 'src/app/app.config';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about',
@@ -6,10 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent implements OnInit {
-
-  constructor() { }
+  public appName = appName;
+  constructor(
+    private title: Title
+  ) { }
 
   ngOnInit(): void {
+    this.title.setTitle(`About - ${appName}`);
   }
 
 }

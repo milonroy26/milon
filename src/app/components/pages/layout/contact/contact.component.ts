@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { IMessage } from 'src/app/interfaces/message.interface';
-import { ContactsService } from 'src/app/services/contacts.service'
+import { ContactsService } from 'src/app/services/contacts.service';
+
 
 @Component({
   selector: 'app-contact',
@@ -8,6 +9,8 @@ import { ContactsService } from 'src/app/services/contacts.service'
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
+  // appName
+
   public hasError = false;
   public emailError = false;
   public messageError = false;
@@ -17,8 +20,9 @@ export class ContactComponent implements OnInit {
   public inName:string = '';
   public inEmail:string = '';
   public issue:string = '';
-  public message:string = ''; 
-
+  public message:string = '';
+  
+ 
   constructor(
     private contact: ContactsService,
   ) { }
