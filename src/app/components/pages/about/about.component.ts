@@ -10,11 +10,11 @@ import { Title } from '@angular/platform-browser';
 export class AboutComponent implements OnInit {
   public appName = appName;
   constructor(
-    private title: Title
+    public title: Title
   ) { }
 
   ngOnInit(): void {
-    this.title.setTitle(`About - ${appName}`);
+    this.title.setTitle(`${appName}`);
   }
 
 }

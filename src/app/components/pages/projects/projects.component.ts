@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-
+import { appName } from 'src/app/app.config';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-projects',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./projects.component.scss']
 })
 export class ProjectsComponent implements OnInit {
-  constructor() { }
+  public appName = appName;
+  constructor(
+    public Title: Title,
+  ) { }
 
   ngOnInit(): void {
+    this.Title.setTitle(`${appName}`);
   }
 
 }
