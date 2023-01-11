@@ -1,11 +1,17 @@
 // about css
 .about-section{
-    background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-    color: white;
-    padding: 14% 0;
- }
- 
- .about-section img{
-    height: 450px;
- }
- 
+   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+   color: white;
+   height: 100vh;
+   display: flex;
+   align-items: center;
+}
+
+.about-section .container .contents {
+  display: flex;
+  align-items: center;
+}
+
+.about-section img{
+   height: 100%;
+}

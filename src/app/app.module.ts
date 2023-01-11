@@ -12,6 +12,9 @@ import { ContactComponent } from './components/pages/layout/contact/contact.comp
 import { AboutComponent } from './components/pages/about/about.component' 
 import { FormsModule } from '@angular/forms';
 import { ProjectsComponent } from './components/pages/projects/projects.component';
+import { SwiperModule } from 'swiper/angular';
+
+
 
 @NgModule({
   declarations: [
@@ -27,7 +30,8 @@ import { ProjectsComponent } from './components/pages/projects/projects.componen
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    SwiperModule
   ],
   providers: [
     ContactsService,
