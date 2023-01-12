@@ -1,12 +1,66 @@
 .resume{
-    background-color: #04293A;
+    background: url('../../../../assets/resume-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
-.resume img{
-    width: 160px;
+
+.resume .member {
+    box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
+    padding: 20px;
+    border-radius: 10px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.resume-text .text-white{
-    margin-bottom: 4px;
+
+.resume .member .pic {
+    overflow: hidden;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
 }
+
+.resume .member .pic img {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s ease-in-out;
+}
+
+.resume .member:hover .pic img {
+    transform: scale(1.1);
+} 
+
+
+.resume .member .resume-text h4 {
+    font-weight: 700;
+    margin-bottom: 6px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.resume .member .resume-text h5 {
+    font-size: 15px;
+    padding-bottom: 10px;
+    font-weight: 500;
+    color: #08d665;
+    position: relative;
+}
+
+.resume .member .resume-text h5::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b2c8dd;
+    bottom: 0;
+    left: 0;
+}
+
+
+
 #resumeIcon img{
     width: 32px;
     height: 27px;
@@ -49,3 +103,14 @@
 .email-box a:hover{
     opacity: 0.8;
 }
+
+
+// Small devices (landscape phones, 576px and up)
+@media (max-width: 576px) { 
+    .resume .member .pic {
+        overflow: hidden;
+        height: 180px;
+        width: 180px;
+        border-radius: 10px;
+    }
+ }

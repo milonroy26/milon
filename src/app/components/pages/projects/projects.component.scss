@@ -3,43 +3,80 @@
 
 
 .project-section{
-    background-color: #04293a;
-}
-.card{
-    border: 1px solid pink !important;
-    border-radius: 0 !important;
-    
+   background: url('../../../../assets/hero-bg.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
 }
 
-.card-img-top {
-    height: 235px;
-}
 
-.info {
+.project-card .box {
     width: 100%;
-    padding: 4px 4px;
-    background: rgba(0, 0, 0, 0.6);
-}
-
-.info h3 {
-    font-size: 16px;
-    font-weight: 400;
-    color: #fff;
-    align-items: center;
+    margin: 12px 0;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,.5);
     text-align: center;
-    margin-top: 6px;
+    border-radius: 4px;
 }
 
-.info a {
+.project-card .box .image {
+    background: linear-gradient(15deg, #eee 30%, #fff 30.1%);
+}
+
+.project-card .box .image img {
+    height: 320px;
+}
+
+.project-card .box:hover .image {
+    transform: translateY(30px);
+}
+
+.project-card .box .top-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    padding: 5px;
+    z-index: 1;
+
+    transform: translateY(-100%);
+}
+
+.project-card .box .top-content a {
     text-decoration: none;
-    color: #fff;
-    border: 2px solid mediumvioletred;
-    border-radius: 20px;
-    font-size: 15px;
-    padding: 2px 8px;
-    text-align: center;
-    transition: 500ms;
+    font-size: 18px;
+    font-weight: 600;
+    color: #444;
 }
-.info a:hover{
-    color: #08d665;
+
+.project-card .box .top-content a i {
+    color: #08D665;
+}
+
+.project-card .box .top-content a:is(:active, :hover) {
+    color: #08D665;
+}
+
+.project-card .box:hover .top-content {
+    transform: translateY(0%);
+}
+
+.project-card .box .content {
+    background-color: #eee;
+    padding: 10px 0px;
+}
+
+.project-card .box .content h4 {
+    color: #04293a;
+    font-size: 18px;
+    margin-bottom: 2px;
+}
+
+.project-card .box .content h3 {
+    font-size: 16px;
+    color: #444;
+    margin: 0;
 }

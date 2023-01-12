@@ -3,11 +3,138 @@
     <div class="container py-5">
         <h4 class="mainColor fw-bold mt-3 text-center">PROJECTS</h4>
 
-        <div class="py-4">
+        <div class="mt-5">
 
             <swiper
-                [slidesPerView]="1"
-                [spaceBetween]="10"
+                [slidesPerView]="0"
+                [spaceBetween]="6"
+                [loop]="true"
+                [centeredSlides]="true"
+                
+                [autoplay]="{
+                    delay: 6500,
+                    disableOnInteraction: false
+                }"
+                
+            
+                        
+                [breakpoints]="{
+                '0': {
+                    slidesPerView: 1
+                },
+                '768': {
+                    slidesPerView: 2
+                },
+                '1024': {
+                    slidesPerView: 3
+                }
+                }"
+
+                class="mySwiper">
+                <ng-template swiperSlide>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </ng-template>
+
+                <ng-template swiperSlide>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </ng-template>
+                
+            </swiper>
+
+        </div>
+
+        <div>
+            <swiper
+                [slidesPerView]="0"
+                [spaceBetween]="6"
                 [loop]="true"
                 [centeredSlides]="true"
                 [pagination]="{
@@ -35,122 +162,102 @@
 
                 class="mySwiper">
                 <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
-                        <div class="card-body info d-flex justify-content-between">
-                            <h3 class="card-text">E COMMERCE WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/mobile-web/?fbclid=IwAR2s4Pydi38ku7uPXPO9I-rpcwa5Ci5tGKfiw_9MOY1EOEeztGL23TwoY3o">LIVE WEB</a>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
                         </div>
+
                     </div>
+
                 </ng-template>
 
                 <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web2.jpg" alt="">
-                        <div class="card-body info d-flex justify-content-between">
-                            <h3 class="card-text">E COMMERCE WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/cv-website1/?fbclid=IwAR0rqpVPtHVIMFcmOeLKQZ4J81EuJGM3PIenYMoZ7jHeXWJ00zM_FaBwhY8">LIVE WEB</a>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
                         </div>
+
                     </div>
+
                 </ng-template>
 
                 <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web3.jpg" alt="">
-                        <div class="card-body info d-flex justify-content-between">
-                            <h3 class="card-text">Restoran WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/restoran1/">LIVE WEB</a>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
                         </div>
+
                     </div>
+
                 </ng-template>
 
                 <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web4.jpg" alt="">
-                        <div class="info d-flex justify-content-between">
-                            <h3 class="card-text">E COMMERCE WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/cv-website1/?fbclid=IwAR0rqpVPtHVIMFcmOeLKQZ4J81EuJGM3PIenYMoZ7jHeXWJ00zM_FaBwhY8">LIVE WEB</a>
+                    
+                    <div class="project-card">
+
+                        <div class="box">
+
+                            <div class="top-content">
+                               <a href="#">Shwo Project <i class="fa-solid fa-arrow-right-to-bracket"></i> </a>
+                            </div>
+    
+                            <div class="image">
+                                <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
+                            </div>
+    
+                            <div class="card-body content">
+                                <h4 class="card-text">E COMMERCE</h4>
+                                <h3>Web development</h3>
+                            </div>
                         </div>
+
                     </div>
+
                 </ng-template>
                 
             </swiper>
-
-        </div>
-
-        <div>
-
-            <swiper
-                [slidesPerView]="1"
-                [spaceBetween]="6"
-                [loop]="true"
-                [centeredSlides]="true"
-                [pagination]="{
-                    clickable: true
-                }"
-
-                [autoplay]="{
-                    delay: 9500,
-                    disableOnInteraction: false
-                }"
-                
-            
-                        
-                [breakpoints]="{
-                '0': {
-                    slidesPerView: 1
-                },
-                '768': {
-                    slidesPerView: 2
-                },
-                '1024': {
-                    slidesPerView: 3
-                }
-                }"
-
-                class="mySwiper">
-                <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web1.jpg" alt="">
-                        <div class="card-body info d-flex justify-content-between">
-                            <h3 class="card-text">E COMMERCE WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/mobile-web/?fbclid=IwAR2s4Pydi38ku7uPXPO9I-rpcwa5Ci5tGKfiw_9MOY1EOEeztGL23TwoY3o">LIVE WEB</a>
-                        </div>
-                    </div>
-                </ng-template>
-
-                <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web2.jpg" alt="">
-                        <div class="card-body info d-flex justify-content-between">
-                            <h3 class="card-text">E COMMERCE WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/cv-website1/?fbclid=IwAR0rqpVPtHVIMFcmOeLKQZ4J81EuJGM3PIenYMoZ7jHeXWJ00zM_FaBwhY8">LIVE WEB</a>
-                        </div>
-                    </div>
-                </ng-template>
-
-                <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web3.jpg" alt="">
-                        <div class="card-body info d-flex justify-content-between">
-                            <h3 class="card-text">Restoran WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/restoran1/">LIVE WEB</a>
-                        </div>
-                    </div>
-                </ng-template>
-
-                <ng-template swiperSlide>
-                    <div class="projectCard card">
-                        <img class="card-img-top" src="../../../../assets/web4.jpg" alt="">
-                        <div class="info d-flex justify-content-between">
-                            <h3 class="card-text">E COMMERCE WEB</h3>
-                            <a target="_blank" href="https://mnroy.github.io/cv-website1/?fbclid=IwAR0rqpVPtHVIMFcmOeLKQZ4J81EuJGM3PIenYMoZ7jHeXWJ00zM_FaBwhY8">LIVE WEB</a>
-                        </div>
-                    </div>
-                </ng-template>
-                
-            </swiper>
-
         </div>
 
     </div>

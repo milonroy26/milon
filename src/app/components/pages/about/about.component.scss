@@ -1,6 +1,10 @@
 // about css
 .about-section{
-   background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+   background: url('../../../../assets/hero-bg.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
    color: white;
    height: 100vh;
    display: flex;
