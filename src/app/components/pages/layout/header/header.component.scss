@@ -1,8 +1,15 @@
-.navbar{
-   //  background-color: #04293A;
+
+ nav {
    background-color:  hsl(240, 100%, 6%);
    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   transition: 1s ease;
+   box-shadow: 5px 3px 40px hsla(191, 100%, 17%, 0.1);
  }
+
+ nav.sticky {
+   background-color: #04293A;
+ }
+
  .navbar .color {
     color: #f0f0f0!important;
     font-size: 1rem;
